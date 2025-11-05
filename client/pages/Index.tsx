@@ -93,7 +93,7 @@ export default function Index() {
                     <div className="text-sm font-light text-[#171717] text-justify" style={{ fontFamily: 'Geist, sans-serif' }}>
                       <p className="mb-3">For me, design goes beyond visuals — it's about solving real problems. I craft clean, modern, human-centered experiences that connect people with brands and make technology feel effortless.</p>
                       <p className="mb-3">With nearly 5 years of experience as a Senior UX/UI Designer, I've built digital products that put people first — blending clean aesthetics, thoughtful interactions, and meaningful impact.</p>
-                      <p>I also leverage AI to boost productivity and accelerate iteration — from copywriting and user research to rapid prototyping and design automation.</p>
+                      <p>I also leverage AI to boost productivity and accelerate iteration ��� from copywriting and user research to rapid prototyping and design automation.</p>
                     </div>
                   </div>
                 </div>
@@ -275,20 +275,20 @@ export default function Index() {
 function ProjectCard({ url, title, image }: { url: string; title: string; image: string }) {
   return (
     <div className="rounded-2xl bg-white p-1 pb-1">
-      <div className="p-3 flex items-center justify-between">
-        <div className="flex items-center gap-3 flex-wrap">
-          <div className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#F6F6F6] backdrop-blur-sm">
-            <Globe className="w-3 h-3 text-[#737373]" />
-            <div className="flex items-center gap-1.5">
-              <span className="text-[9px] text-[#B5B5B5] uppercase tracking-[0.72px]" style={{ fontFamily: 'Geist Mono, monospace' }}>https://</span>
-              <span className="text-xs text-[#404040]" style={{ fontFamily: 'Geist, sans-serif' }}>{url}</span>
+      <div className="p-3 flex items-center justify-between gap-3 min-w-0">
+        <div className="flex items-center gap-3 min-w-0 flex-1">
+          <div className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#F6F6F6] backdrop-blur-sm flex-shrink-0">
+            <Globe className="w-3 h-3 text-[#737373] flex-shrink-0" />
+            <div className="flex items-center gap-1 min-w-0">
+              <span className="text-[9px] text-[#B5B5B5] uppercase tracking-[0.72px] flex-shrink-0" style={{ fontFamily: 'Geist Mono, monospace' }}>https://</span>
+              <span className="text-xs text-[#404040] truncate" style={{ fontFamily: 'Geist, sans-serif' }}>{url}</span>
             </div>
           </div>
           {title && (
-            <span className="text-xs text-[#404040]" style={{ fontFamily: 'Geist, sans-serif' }}>{title}</span>
+            <span className="text-xs text-[#404040] whitespace-nowrap truncate" style={{ fontFamily: 'Geist, sans-serif' }}>{title}</span>
           )}
         </div>
-        <button className="flex items-center justify-center p-2.5 rounded-full border border-[#EFEFEF] backdrop-blur-sm">
+        <button className="flex items-center justify-center p-2.5 rounded-full border border-[#EFEFEF] backdrop-blur-sm flex-shrink-0">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M4 12L12 4M12 4H6.66667M12 4V9.33333" stroke="#404040" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
