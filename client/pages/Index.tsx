@@ -69,12 +69,12 @@ export default function Index() {
                         <Mail className="w-5 h-5 text-[#3D3D3D]" />
                       </button>
                     </div>
-                    <button className="flex items-center gap-2.5 px-3 py-1.5 rounded-md bg-gradient-to-b from-[#111113] to-[#5B5B63] shadow-[0_0_0_1px_#1F1F22] p-px">
-                      <div className="flex items-center gap-2.5 px-3 py-1.5 rounded-[5px] bg-gradient-to-b from-[#404045] to-[#1A1A1C]">
+                    <div className="rounded-md bg-gradient-to-b from-[#111113] to-[#5B5B63] p-[1px] shadow-[0_0_0_1px_#1F1F22]">
+                      <button className="flex items-center gap-2.5 px-3 py-1.5 rounded-[5px] bg-gradient-to-b from-[#404045] to-[#1A1A1C]">
                         <Mail className="w-4 h-4 text-white" />
                         <span className="text-sm font-medium text-white" style={{ fontFamily: 'Geist, sans-serif' }}>Contact Me</span>
-                      </div>
-                    </button>
+                      </button>
+                    </div>
                   </div>
                 </div>
 
@@ -118,30 +118,30 @@ export default function Index() {
                       </button>
                     </div>
                     {expandedSkills.core && (
-                      <div className="flex flex-col gap-0">
-                        <div className="flex flex-wrap gap-0">
-                          <div className="px-2.5 py-2 rounded-full border border-[#DCDCDC]">
-                            <span className="text-[11px] text-[#7C7C7C] uppercase tracking-[1.32px]" style={{ fontFamily: 'Geist Mono, monospace' }}>🧩UI/UX Design</span>
+                      <div className="flex flex-col -gap-px">
+                        <div className="flex flex-wrap -gap-px">
+                          <div className="px-2.5 py-2.5 rounded-full border border-[#DCDCDC]">
+                            <span className="text-[11px] text-[#7C7C7C] uppercase tracking-[1.32px] leading-4" style={{ fontFamily: 'Geist Mono, monospace' }}>🧩UI/UX Design</span>
                           </div>
-                          <div className="px-2.5 py-2 rounded-full border border-[#DCDCDC]">
-                            <span className="text-[11px] text-[#7C7C7C] uppercase tracking-[1.32px]" style={{ fontFamily: 'Geist Mono, monospace' }}>🎨Visual Design</span>
+                          <div className="px-2.5 py-2.5 rounded-full border border-[#DCDCDC]">
+                            <span className="text-[11px] text-[#7C7C7C] uppercase tracking-[1.32px] leading-4" style={{ fontFamily: 'Geist Mono, monospace' }}>🎨Visual Design</span>
                           </div>
-                          <div className="px-2.5 py-2 rounded-full border border-[#DCDCDC]">
-                            <span className="text-[11px] text-[#7C7C7C] uppercase tracking-[1.32px]" style={{ fontFamily: 'Geist Mono, monospace' }}>🧱Design Systems</span>
+                          <div className="px-2.5 py-2.5 rounded-full border border-[#DCDCDC]">
+                            <span className="text-[11px] text-[#7C7C7C] uppercase tracking-[1.32px] leading-4" style={{ fontFamily: 'Geist Mono, monospace' }}>🧱Design Systems</span>
                           </div>
-                          <div className="px-2.5 py-2 rounded-full border border-[#DCDCDC]">
-                            <span className="text-[11px] text-[#7C7C7C] uppercase tracking-[1.32px]" style={{ fontFamily: 'Geist Mono, monospace' }}>🧾Wireframming</span>
+                          <div className="px-2.5 py-2.5 rounded-full border border-[#DCDCDC]">
+                            <span className="text-[11px] text-[#7C7C7C] uppercase tracking-[1.32px] leading-4" style={{ fontFamily: 'Geist Mono, monospace' }}>🧾Wireframming</span>
                           </div>
                         </div>
-                        <div className="flex flex-wrap gap-0">
-                          <div className="px-2.5 py-2 rounded-full border border-[#DCDCDC]">
-                            <span className="text-[11px] text-[#7C7C7C] uppercase tracking-[1.32px]" style={{ fontFamily: 'Geist Mono, monospace' }}>⚙️Prototyping</span>
+                        <div className="flex flex-wrap -gap-px">
+                          <div className="px-2.5 py-2.5 rounded-full border border-[#DCDCDC]">
+                            <span className="text-[11px] text-[#7C7C7C] uppercase tracking-[1.32px] leading-4" style={{ fontFamily: 'Geist Mono, monospace' }}>⚙️Prototyping</span>
                           </div>
-                          <div className="px-2.5 py-2 rounded-full border border-[#DCDCDC]">
-                            <span className="text-[11px] text-[#7C7C7C] uppercase tracking-[1.32px]" style={{ fontFamily: 'Geist Mono, monospace' }}>🔁Interaction Design</span>
+                          <div className="px-2.5 py-2.5 rounded-full border border-[#DCDCDC]">
+                            <span className="text-[11px] text-[#7C7C7C] uppercase tracking-[1.32px] leading-4" style={{ fontFamily: 'Geist Mono, monospace' }}>🔁Interaction Design</span>
                           </div>
-                          <div className="px-2.5 py-2 rounded-full border border-[#DCDCDC]">
-                            <span className="text-[11px] text-[#7C7C7C] uppercase tracking-[1.32px]" style={{ fontFamily: 'Geist Mono, monospace' }}>🗂️Information Architecture</span>
+                          <div className="px-2.5 py-2.5 rounded-full border border-[#DCDCDC]">
+                            <span className="text-[11px] text-[#7C7C7C] uppercase tracking-[1.32px] leading-4" style={{ fontFamily: 'Geist Mono, monospace' }}>🗂️Information Architecture</span>
                           </div>
                         </div>
                       </div>
