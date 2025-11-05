@@ -57,7 +57,7 @@ export default function Index() {
                     className="w-[60px] h-[60px] rounded-full shadow-[0_0_14.308px_0_rgba(0,0,0,0.32)_inset] flex-shrink-0"
                   />
 
-                  <div className="flex items-center gap-2 flex-wrap flex-shrink-0">
+                  <div className="flex items-center gap-2 flex-wrap flex-shrink-0 sm:flex-nowrap">
                     <div className="flex items-center gap-1">
                       <button className="flex h-[30px] items-center justify-center px-4 rounded-full bg-[rgba(41,41,41,0.08)] backdrop-blur-sm flex-shrink-0">
                         <Github className="w-5 h-5 text-[#3D3D3D]" />
@@ -72,7 +72,7 @@ export default function Index() {
                     <div className="rounded-md bg-gradient-to-b from-[#111113] to-[#5B5B63] p-[1px] shadow-[0_0_0_1px_#1F1F22] flex-shrink-0">
                       <button className="flex items-center gap-2 px-3 py-1.5 rounded-[5px] bg-gradient-to-b from-[#404045] to-[#1A1A1C] whitespace-nowrap">
                         <Mail className="w-4 h-4 text-white flex-shrink-0" />
-                        <span className="text-sm font-medium text-white" style={{ fontFamily: 'Geist, sans-serif' }}>Contact Me</span>
+                        <span className="text-sm font-medium text-white hidden sm:inline" style={{ fontFamily: 'Geist, sans-serif' }}>Contact Me</span>
                       </button>
                     </div>
                   </div>
