@@ -333,33 +333,33 @@ export default function Index() {
         </div>
       )}
 
-      <div className="grid grid-cols-1 lg:grid-cols-[1fr_minmax(480px,600px)] gap-0 h-screen">
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_minmax(480px,600px)] gap-0 min-h-screen lg:h-screen">
         {/* Left Side - Profile (Scrollable) */}
         <div className="scroll-container bg-white animate-slide-in-left">
           <div className="px-4 xs:px-5 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-6 xs:py-7 sm:py-8 md:py-10 lg:py-12">
             <div className="w-full max-w-[600px] mx-auto flex flex-col gap-6 sm:gap-7 md:gap-8">
               {/* Header */}
               <div className="flex flex-col gap-3 xs:gap-4 w-full animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-                <div className="flex flex-col xs:flex-row justify-between items-start xs:items-center gap-2 xs:gap-3">
-                  <button className="flex items-center gap-1.5 px-3 xs:px-4 py-1.5 rounded-full bg-[rgba(0,0,0,0.05)] backdrop-blur-sm flex-shrink-0 whitespace-nowrap transition-all hover:bg-[rgba(0,0,0,0.1)] active:scale-95 text-xs xs:text-sm">
+                <div className="flex flex-col gap-2 xs:gap-3">
+                  <button className="flex items-center gap-1.5 px-3 xs:px-4 py-1.5 rounded-full bg-[rgba(0,0,0,0.05)] backdrop-blur-sm flex-shrink-0 whitespace-nowrap transition-all hover:bg-[rgba(0,0,0,0.1)] active:scale-95 text-xs xs:text-sm w-fit">
                     <Download className="w-3.5 xs:w-4 h-3.5 xs:h-4 text-[#000] flex-shrink-0" />
                     <span className="text-[#000] font-medium">Download My Resume</span>
                   </button>
 
-                  <div className="flex flex-col xs:flex-row items-start xs:items-center gap-1.5 xs:gap-2 flex-wrap">
-                    <span className="text-xs text-[#808080]">Currently at:</span>
-                    <div className="flex items-center gap-1 flex-wrap">
-                      <div className="flex items-center gap-1 px-3 py-1 xs:py-1.5 rounded-full bg-[rgba(0,0,0,0.05)] backdrop-blur-sm flex-shrink-0 transition-all hover:bg-[rgba(0,0,0,0.1)]">
+                  <div className="flex flex-col xs:flex-row items-start xs:items-center gap-1.5 xs:gap-2">
+                    <span className="text-xs text-[#808080] flex-shrink-0">Currently at:</span>
+                    <div className="flex items-center gap-1 xs:gap-1.5 flex-wrap">
+                      <div className="flex items-center gap-1 px-2.5 xs:px-3 py-1 xs:py-1.5 rounded-full bg-[rgba(0,0,0,0.05)] backdrop-blur-sm flex-shrink-0 transition-all hover:bg-[rgba(0,0,0,0.1)]">
                         <span className="text-xs xs:text-sm flex-shrink-0">🌍</span>
-                        <span className="text-[10px] xs:text-xs text-[#000]">Surat</span>
+                        <span className="text-[10px] xs:text-xs text-[#000] whitespace-nowrap">Surat</span>
                       </div>
-                      <div className="flex items-center gap-1 px-3 py-1 xs:py-1.5 rounded-full bg-[rgba(0,0,0,0.05)] backdrop-blur-sm flex-shrink-0 transition-all hover:bg-[rgba(0,0,0,0.1)]">
+                      <div className="flex items-center gap-1 px-2.5 xs:px-3 py-1 xs:py-1.5 rounded-full bg-[rgba(0,0,0,0.05)] backdrop-blur-sm flex-shrink-0 transition-all hover:bg-[rgba(0,0,0,0.1)]">
                         <span className="text-xs xs:text-sm flex-shrink-0">⏰</span>
-                        <span className="text-[10px] xs:text-xs text-[#000]">10:04 AM</span>
+                        <span className="text-[10px] xs:text-xs text-[#000] whitespace-nowrap">10:04 AM</span>
                       </div>
-                      <div className="flex items-center gap-1 px-3 py-1 xs:py-1.5 rounded-full bg-[rgba(0,0,0,0.05)] backdrop-blur-sm flex-shrink-0 transition-all hover:bg-[rgba(0,0,0,0.1)]">
+                      <div className="flex items-center gap-1 px-2.5 xs:px-3 py-1 xs:py-1.5 rounded-full bg-[rgba(0,0,0,0.05)] backdrop-blur-sm flex-shrink-0 transition-all hover:bg-[rgba(0,0,0,0.1)]">
                         <span className="text-xs xs:text-sm flex-shrink-0">🌤️</span>
-                        <span className="text-[10px] xs:text-xs text-[#000]">14°C</span>
+                        <span className="text-[10px] xs:text-xs text-[#000] whitespace-nowrap">14°C</span>
                       </div>
                     </div>
                   </div>
@@ -561,23 +561,21 @@ export default function Index() {
         </div>
 
         {/* Right Side - Portfolio (Scrollable) */}
-        <div className="hidden lg:flex scroll-container bg-[#EBEBEB] border-l border-[rgba(0,0,0,0.08)] animate-slide-in-right flex-col">
-          <div className="px-6 py-8 lg:py-12">
-            <div className="w-full max-w-[550px] mx-auto flex flex-col gap-6 sm:gap-7">
-              <div className="flex items-center gap-3">
-                <span className="text-[10px] sm:text-[11px] text-[#999999] uppercase tracking-[1.2px] font-mono">// SELECTED WORK</span>
-              </div>
+        <div className="lg:scroll-container bg-[#EBEBEB] lg:border-l lg:border-[rgba(0,0,0,0.08)] animate-slide-in-right lg:flex flex-col px-4 xs:px-5 sm:px-6 md:px-8 lg:px-10 xl:px-14 py-6 xs:py-7 sm:py-8 md:py-10 lg:py-12">
+          <div className="w-full max-w-[550px] mx-auto flex flex-col gap-6 sm:gap-7">
+            <div className="flex items-center gap-3">
+              <span className="text-[9px] xs:text-[10px] sm:text-[11px] text-[#999999] uppercase tracking-[1.2px] font-mono">// SELECTED WORK</span>
+            </div>
 
-              <div className="flex flex-col gap-5 sm:gap-6">
-                {projects.map((project, idx) => (
-                  <ProjectCard
-                    key={project.id}
-                    {...project}
-                    onSelect={setSelectedProject}
-                    delay={0.3 + idx * 0.1}
-                  />
-                ))}
-              </div>
+            <div className="flex flex-col gap-5 sm:gap-6">
+              {projects.map((project, idx) => (
+                <ProjectCard
+                  key={project.id}
+                  {...project}
+                  onSelect={setSelectedProject}
+                  delay={0.3 + idx * 0.1}
+                />
+              ))}
             </div>
           </div>
         </div>
