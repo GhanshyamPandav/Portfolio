@@ -214,7 +214,12 @@ export default function Index() {
         .scroll-container {
           overflow-y: auto;
           overflow-x: hidden;
-          height: 100vh;
+        }
+
+        @media (min-width: 1024px) {
+          .scroll-container {
+            height: 100vh;
+          }
         }
         
         .scroll-container::-webkit-scrollbar {
