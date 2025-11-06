@@ -338,7 +338,7 @@ export default function Index() {
         </div>
       )}
 
-      <div className="grid grid-cols-1 lg:grid-cols-[1fr_minmax(480px,600px)] gap-0 min-h-screen lg:h-screen">
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_minmax(480px,600px)] gap-0 auto-rows-max lg:auto-rows-auto lg:h-screen">
         {/* Left Side - Profile (Scrollable) */}
         <div className="scroll-container bg-white animate-slide-in-left">
           <div className="px-4 xs:px-5 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-6 xs:py-7 sm:py-8 md:py-10 lg:py-12">
