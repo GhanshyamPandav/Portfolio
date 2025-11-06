@@ -566,7 +566,7 @@ export default function Index() {
         </div>
 
         {/* Right Side - Portfolio (Scrollable) */}
-        <div className="lg:scroll-container bg-[#EBEBEB] lg:border-l lg:border-[rgba(0,0,0,0.08)] animate-slide-in-right lg:flex flex-col px-4 xs:px-5 sm:px-6 md:px-8 lg:px-10 xl:px-14 py-6 xs:py-7 sm:py-8 md:py-10 lg:py-12">
+        <div className="scroll-container bg-[#EBEBEB] border-t lg:border-t-0 lg:border-l border-[rgba(0,0,0,0.08)] animate-slide-in-right flex flex-col px-4 xs:px-5 sm:px-6 md:px-8 lg:px-10 xl:px-14 py-6 xs:py-7 sm:py-8 md:py-10 lg:py-12">
           <div className="w-full max-w-[550px] mx-auto flex flex-col gap-6 sm:gap-7">
             <div className="flex items-center gap-3">
               <span className="text-[9px] xs:text-[10px] sm:text-[11px] text-[#999999] uppercase tracking-[1.2px] font-mono">// SELECTED WORK</span>
